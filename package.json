@@ -19,7 +19,9 @@
     "test-unit": "babel-tape-runner **/*.unit.js | faucet",
     "test-unit-watch": "tape-watch -r babel-register **/*.unit.js -p faucet",
     "sonarlint": "if node -p 'process.platform' = 'darwin'; then ./sonarlint.sh; elif node -p 'process.platform' = 'win32'; then ./sonarlint.bat; else echo 'error'; fi",
-    "stub": "json-server --watch src/api/db.json"
+    "stub": "json-server --watch src/api/db.json",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "babel": {
     "presets": [
@@ -54,7 +56,8 @@
     "redux-form": "^6.7.0",
     "redux-oidc": "^3.0.0-beta.7",
     "redux-saga": "^0.14.3",
-    "write": "^0.3.3"
+    "write": "^0.3.3",
+    "snyk": "^1.192.0"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.9.0",
@@ -98,5 +101,6 @@
     "url-loader": "^0.5.9",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.6.1"
-  }
+  },
+  "snyk": true
 }
