@@ -54,7 +54,7 @@
     "redux-form": "^6.7.0",
     "redux-oidc": "^3.0.0-beta.7",
     "redux-saga": "^0.14.3",
-    "write": "^0.3.3"
+    "write": "^2.0.0"
   },
   "devDependencies": {
     "axios-mock-adapter": "^1.9.0",
