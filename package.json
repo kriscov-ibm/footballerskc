@@ -31,7 +31,7 @@
   "author": "KC",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^1.6.4",
     "babel-plugin-react-html-attrs": "^2.0.0",
     "babel-polyfill": "^6.20.0",
     "co": "^4.6.0",
